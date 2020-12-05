@@ -27,6 +27,24 @@ struct Element {
 
 ```
 
+## SingleResult
+
+Returns a single element. Useful to avoid typing a few `return` keywords.
+
+```swift
+extension Bool {
+    @SingleResult var enEspanol: Bool {
+        switch self {
+            case true: "Sí"
+            case false: "No""
+        }
+    }
+    
+}
+
+```
+
+
 ## UUIDResult
 
 Convienence formatter for specifying UUID properties
@@ -43,4 +61,5 @@ struct Element: UUIDIdentifiable {
     }
     
 }
+
 ```
