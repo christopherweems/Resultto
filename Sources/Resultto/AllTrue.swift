@@ -3,7 +3,7 @@
 
 import Foundation
 
-@_functionBuilder
+@resultBuilder
 public struct AllTrue {
     public static func buildBlock(_ elements: Bool...) -> Bool {
         elements.allSatisfy { $0 == true }

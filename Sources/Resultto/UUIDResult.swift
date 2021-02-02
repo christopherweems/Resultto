@@ -3,7 +3,7 @@
 
 import Foundation
 
-@_functionBuilder
+@resultBuilder
 public struct UUIDResult {
     public static func buildBlock(_ uuid: UUID) -> UUID {
         uuid
