@@ -2,7 +2,7 @@
 
 A collection of handy result builders.
 
-Requires Swift 5.3+ (and Swift 5.4 upon release)
+Requires Swift 5.4+
 
 
 ## AllNil
