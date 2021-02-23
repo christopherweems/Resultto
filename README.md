@@ -63,3 +63,22 @@ struct Element: UUIDIdentifiable {
 }
 
 ```
+
+## Count
+
+Total of `true` boolean values 
+
+```swift
+struct FooBar {
+    var foo: Int?
+    var bar: Bool?
+    
+    @Count var nonOptionalCount: Int {
+        foo != nil
+        bar != nil
+        
+    }
+    
+}
+
+```
