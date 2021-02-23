@@ -2,14 +2,6 @@ import XCTest
 @testable import Resultto
 
 final class ResulttoTests: XCTestCase {
-    static var allTests = [
-        ("testAllNil", testAllNil),
-        
-    ]
-    
-}
-
-extension ResulttoTests {
     func testAllNil() {
         let a: String? = nil
         let b = 42
@@ -21,6 +13,23 @@ extension ResulttoTests {
         }
         
         XCTAssertFalse(notNil)
+        
+    }
+    
+    func testCount() {
+        @Count var five: Int {
+            true
+            false
+            true
+            true
+            true
+            false
+            false
+            true
+            
+        }
+        
+        XCTAssertEqual(five, 5)
         
     }
     
