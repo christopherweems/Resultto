@@ -64,11 +64,13 @@ fileprivate extension Array where Element == StringResult.BuilderRun {
     }
     
     mutating func append<SP: StringProtocol>(_ substring: SP) {
+        let substring = String(substring)
+        
         if self.isEmpty {
-            self.append(Element())
+            self.append(Element(components: [substring]))
             
         } else {
-            self.mutableLast.components.append(String(substring))
+            self.mutableLast.components.append(substring)
             
         }
     }
