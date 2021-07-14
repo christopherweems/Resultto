@@ -33,4 +33,16 @@ final class ResulttoTests: XCTestCase {
         
     }
     
+    func testStringResult() {
+        @StringResult var testString: String {
+            "1"
+            "2"
+            "3"
+            
+        }
+        
+        XCTAssertEqual(testString, "123")
+        
+    }
+    
 }
