@@ -33,4 +33,15 @@ final class ResulttoTests: XCTestCase {
         
     }
     
+    func testSetResult() {
+        @SetResult var testSet: Set<Int> {
+            1
+            2
+            2
+            
+        }
+        
+        XCTAssertEqual(testSet, [1,2])
+    }
+    
 }
