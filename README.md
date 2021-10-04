@@ -47,7 +47,7 @@ struct FooBar {
 
 ```
 
-## Set Result
+## SetResult
 
 Avoid some punctuation while building Set properties.
 
@@ -72,7 +72,7 @@ Returns a single element. Useful to avoid typing a few `return` keywords.
 
 ```swift
 extension Bool {
-    @SingleResult var enEspanol: Bool {
+    @SingleResult var enEspañol: String {
         switch self {
             case true: "Sí"
             case false: "No""
