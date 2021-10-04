@@ -2,6 +2,7 @@
 
 A collection of handy result builders.
 
+Foundation not required for most builder types.
 Requires Swift 5.4+
 
 
@@ -80,7 +81,8 @@ extension Bool {
 
 ## UUIDResult
 
-Convienence formatter for specifying UUID properties
+Convienence formatter for specifying UUID properties.
+(Requires Foundation)
 
 ```swift
 protocol UUIDIdentifiable: Identifiable where ID == UUID {
