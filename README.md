@@ -98,3 +98,24 @@ struct Element: UUIDIdentifiable {
 }
 
 ```
+
+## URLResult
+
+Convienence formatter to specify URLs by strings for urls you know to be valid. 
+URL strings are unsafely unwrapped.
+(Requires Foundation)
+
+```swift
+protocol Website {
+    @URLResult var url: URL
+    
+}
+
+struct Wikipedia: Website {
+    var url: URL {
+        "https://wikipedia.org"
+    }
+    
+}
+
+```
