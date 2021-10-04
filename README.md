@@ -49,6 +49,9 @@ struct FooBar {
 
 ## Set Result
 
+Avoid some punctuation while building Set properties.
+
+```swift
 struct FooBar {
     var foo: Int
     var bar: Int
@@ -60,6 +63,8 @@ struct FooBar {
     }
     
 }
+
+```
 
 ## SingleResult
 
