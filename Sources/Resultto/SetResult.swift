@@ -1,8 +1,6 @@
 //  SetResult.swift
 //  8/12/21
 
-import Foundation
-
 @resultBuilder
 public struct SetResult {
     public static func buildBlock<Element : Hashable>(_ elements: Set<Element>...) -> Set<Element> {
@@ -26,9 +24,17 @@ public extension SetResult {
     
 }
 
+
+// MARK: - SetResult for Set<UUID>
+
+#if canImport(Foundation)
+import Foundation
+
 public extension SetResult {
     static func buildExpression(_ uuid: uuid_t) -> Set<UUID> {
         [.init(uuid: uuid)]
     }
     
 }
+
+#endif

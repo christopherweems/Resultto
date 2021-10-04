@@ -1,6 +1,7 @@
 //  UUIDResult.swift
 //  12/4/20
 
+#if canImport(Foundation)
 import Foundation
 
 @resultBuilder
@@ -29,3 +30,5 @@ public extension UUIDResult {
     }
     
 }
+
+#endif
