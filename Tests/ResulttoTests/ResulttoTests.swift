@@ -42,6 +42,24 @@ final class ResulttoTests: XCTestCase {
         }
         
         XCTAssertEqual(testSet, [1,2])
+        
     }
+   
+    #if canImport(Foundation)
+    func testURLResult() {
+        @URLResult var testURL: URL {
+            "https://wikipedia.org"
+        }
+        
+        @URLResult var test2URL: URL {
+            URL(string: "https://wikipedia.org")!
+        }
+        
+        XCTAssertEqual(testURL.absoluteString, "https://wikipedia.org")
+        XCTAssertEqual(testURL, test2URL)
+        
+    }
+    
+    #endif
     
 }
