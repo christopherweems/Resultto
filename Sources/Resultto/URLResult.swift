@@ -9,6 +9,14 @@ public struct URLResult {
     public static func buildBlock(_ url: URL) -> URL {
         url
     }
+   
+    public static func buildEither(first component: URL) -> URL {
+        component
+    }
+    
+    public static func buildEither(second component: URL) -> URL {
+        component
+    }
     
 }
 
