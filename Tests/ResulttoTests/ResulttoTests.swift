@@ -16,6 +16,37 @@ final class ResulttoTests: XCTestCase {
         
     }
     
+    func testAllTrue() {
+        let falseStatement = false
+        
+        @AllTrue var trueStatement: Bool {
+            true
+            true
+            
+            if falseStatement {
+                false
+                
+            } else {
+                true
+            }
+        }
+        
+        @AllTrue var falseStatement2: Bool {
+            true
+            true
+            
+            if falseStatement {
+                true
+                
+            } else {
+                false
+            }
+        }
+        
+        XCTAssertTrue(trueStatement)
+        XCTAssertFalse(falseStatement2)
+    }
+    
     func testCount() {
         @Count var five: Int {
             true

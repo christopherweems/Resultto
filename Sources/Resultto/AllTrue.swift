@@ -7,4 +7,12 @@ public struct AllTrue {
         elements.allSatisfy { $0 == true }
     }
     
+    public static func buildEither(first: Bool) -> Bool {
+        first == true
+    }
+    
+    public static func buildEither(second: Bool) -> Bool {
+        second == true
+    }
+    
 }
