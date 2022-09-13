@@ -1,5 +1,10 @@
 # Resultto
 
+### [Public Archive]
+**Now incorporated within the [unstandard](https://github.com/christopherweems/unstandard.git) library.**
+
+---
+
 A collection of handy result builders.
 
 Foundation not required for most builder types.
